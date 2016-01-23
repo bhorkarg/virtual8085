@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{231BA015-A056-4E97-83D8-51BF5CE42895}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>_8085Interpreter.My.MyApplication</StartupObject>
+    <RootNamespace>_8085Interpreter</RootNamespace>
+    <AssemblyName>8085Interpreter</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>E7621A4CA6043D286C40F4344EC63FCD74B704B2</ManifestCertificateThumbprint>
+    <ManifestKeyFile>8085Interpreter_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationIcon>v85 %2848x48%29.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>D:\My Documents\Virtual 8085 - Setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Virtual 8085</ProductName>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>8085Interpreter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <WarningLevel>1</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>8085Interpreter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <WarningLevel>1</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUsBox.Designer.vb">
+      <DependentUpon>AboutUsBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutUsBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddressBus.vb" />
+    <Compile Include="ALUnit.vb" />
+    <Compile Include="Conversion.vb" />
+    <Compile Include="Devices\RAM\DlgConfirmSizeStartIndex.Designer.vb">
+      <DependentUpon>DlgConfirmSizeStartIndex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Devices\RAM\DlgConfirmSizeStartIndex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devices\ROM\DlgWriteData.Designer.vb">
+      <DependentUpon>DlgWriteData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Devices\ROM\DlgWriteData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devices\ROM\ROM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exception8085.vb" />
+    <Compile Include="FlagRegister.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormContainer.Designer.vb">
+      <DependentUpon>FormContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormContainer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimingDiagram.Designer.vb">
+      <DependentUpon>FormTimingDiagram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTimingDiagram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDevice.vb" />
+    <Compile Include="Devices\RAM\Memory64KB.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Devices\RAM\RAM.Designer.vb">
+      <DependentUpon>RAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Devices\RAM\RAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Register16.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Register8.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Virtual8085.Designer.vb">
+      <DependentUpon>Virtual8085.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual8085.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WelcomeScreen.Designer.vb">
+      <DependentUpon>WelcomeScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutUsBox.resx">
+      <DependentUpon>AboutUsBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\RAM\DlgConfirmSizeStartIndex.resx">
+      <DependentUpon>DlgConfirmSizeStartIndex.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\ROM\DlgWriteData.resx">
+      <DependentUpon>DlgWriteData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\ROM\ROM.resx">
+      <DependentUpon>ROM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContainer.resx">
+      <DependentUpon>FormContainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimingDiagram.resx">
+      <DependentUpon>FormTimingDiagram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devices\RAM\RAM.resx">
+      <DependentUpon>RAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virtual8085.resx">
+      <DependentUpon>Virtual8085.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeScreen.resx">
+      <DependentUpon>WelcomeScreen.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\_ACI.rtf" />
+    <None Include="Resources\_ADC.rtf" />
+    <None Include="Resources\_ADD.rtf" />
+    <None Include="Resources\_ADI.rtf" />
+    <None Include="Resources\_ANA.rtf" />
+    <None Include="Resources\_ANI.rtf" />
+    <None Include="Resources\_CMA.rtf" />
+    <None Include="Resources\_CMC.rtf" />
+    <None Include="Resources\_CMP.rtf" />
+    <None Include="Resources\_CPI.rtf" />
+    <None Include="Resources\_DAA.rtf" />
+    <None Include="Resources\_DAD.rtf" />
+    <None Include="Resources\_DCR.rtf" />
+    <None Include="Resources\_DCX.rtf" />
+    <None Include="Resources\_HLT.rtf" />
+    <None Include="Resources\_INR.rtf" />
+    <None Include="Resources\_INX.rtf" />
+    <None Include="Resources\_JC.rtf" />
+    <None Include="Resources\_JMP.rtf" />
+    <None Include="Resources\_JNC.rtf" />
+    <None Include="Resources\_JNZ.rtf" />
+    <None Include="Resources\_JPE.rtf" />
+    <None Include="Resources\_JPO.rtf" />
+    <None Include="Resources\_JZ.rtf" />
+    <None Include="Resources\_LDA.rtf" />
+    <None Include="Resources\_LDAX.rtf" />
+    <None Include="Resources\_LHLD.rtf" />
+    <None Include="Resources\_LXI.rtf" />
+    <None Include="Resources\_MOV.rtf" />
+    <None Include="Resources\_MVI.rtf" />
+    <None Include="Resources\_NOP.rtf" />
+    <None Include="Resources\_ORA.rtf" />
+    <None Include="Resources\_ORI.rtf" />
+    <None Include="Resources\_POP.rtf" />
+    <None Include="Resources\_PUSH.rtf" />
+    <None Include="Resources\_RAL.rtf" />
+    <None Include="Resources\_RAR.rtf" />
+    <None Include="Resources\_RLC.rtf" />
+    <None Include="Resources\_RRC.rtf" />
+    <None Include="Resources\_RST1.rtf" />
+    <None Include="Resources\_SBB.rtf" />
+    <None Include="Resources\_SBI.rtf" />
+    <None Include="Resources\_SHLD.rtf" />
+    <None Include="Resources\_SPHL.rtf" />
+    <None Include="Resources\_STA.rtf" />
+    <None Include="Resources\_STAX.rtf" />
+    <None Include="Resources\_STC.rtf" />
+    <None Include="Resources\_SUB.rtf" />
+    <None Include="Resources\_SUI.rtf" />
+    <None Include="Resources\_XCHG.rtf" />
+    <None Include="Resources\_XRA.rtf" />
+    <None Include="Resources\_XRI.rtf" />
+    <None Include="Resources\_XTHL.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_push.png" />
+    <None Include="Resources\_a.png" />
+    <None Include="Resources\_b.png" />
+    <None Include="Resources\_c.png" />
+    <None Include="Resources\_call.png" />
+    <None Include="Resources\_d.png" />
+    <None Include="Resources\_dad.png" />
+    <None Include="Resources\_hlt.png" />
+    <None Include="Resources\_in.png" />
+    <None Include="Resources\_inr_m_dcr_m.png" />
+    <None Include="Resources\_inx_dcx_sphl_pchl.png" />
+    <None Include="Resources\_lda.png" />
+    <None Include="Resources\_lhld.png" />
+    <None Include="Resources\_lxi_jmp_jcond.png" />
+    <None Include="Resources\_out.png" />
+    <None Include="Resources\_pop.png" />
+    <None Include="Resources\_push_rst_n.png" />
+    <None Include="Resources\_RCondition.png" />
+    <None Include="Resources\_shld.png" />
+    <None Include="Resources\_sta.png" />
+    <None Include="Resources\_xthl.png" />
+    <Content Include="v85 %2848x48%29.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
