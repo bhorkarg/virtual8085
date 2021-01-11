@@ -1,6 +1,5 @@
-# Gaurav project
 # Virtual 8085
-Virtual 8085 is an Intel 8085 assembly language interpreter with IDE-like features. This software is helpful in learning 8085 assembly language programming
+Virtual 8085 is an Intel 8085 assembly language interpreter with IDE-like features. This software is helpful in learning 8085 assembly language programming.
 
 
 Download setup at -> http://virtual8085.codeplex.com/
